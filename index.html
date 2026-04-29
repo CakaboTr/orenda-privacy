@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orenda Gizlilik Politikası</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #0D0520;
+    --bg-mid: #1A0A2E;
+    --bg-purple: #2D1454;
+    --gold: #D4AF37;
+    --gold-bright: #F0D784;
+    --gold-warm: #E8C96A;
+    --lilac: #C9A0DC;
+    --text: #FFF8E6;
+    --text-dim: rgba(255, 248, 230, 0.72);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-mid) 50%, var(--bg-purple) 100%);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+  body {
+    padding: 32px 20px 80px;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  }
+  .crown {
+    font-size: 36px;
+    letter-spacing: 8px;
+    color: var(--gold-bright);
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--gold-bright);
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-style: italic;
+    color: var(--gold-warm);
+    font-size: 14px;
+    letter-spacing: 0.3px;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--gold-bright);
+    margin-top: 36px;
+    margin-bottom: 14px;
+    letter-spacing: 0.4px;
+  }
+  h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--gold-warm);
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 14px;
+  }
+  li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 12px;
+    top: 1px;
+  }
+  a {
+    color: var(--gold-bright);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(212, 175, 55, 0.5);
+    transition: opacity 0.2s;
+  }
+  a:hover { opacity: 0.8; }
+  .lang-switch {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .lang-switch a {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+  .card {
+    background: rgba(45, 20, 84, 0.45);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 16px;
+    padding: 18px 22px;
+    margin: 18px 0;
+  }
+  .card h3 { margin-top: 0; }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    font-style: italic;
+  }
+  footer p { color: var(--text-dim); }
+  .updated {
+    text-align: center;
+    color: var(--gold-warm);
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 6px;
+  }
+  @media (max-width: 600px) {
+    body { padding: 22px 16px 60px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 18px; }
+    p, li { font-size: 13.5px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="crown">🌙 ✨ ☆</div>
+    <h1>Orenda Gizlilik Politikası</h1>
+    <div class="subtitle">mistik dünyana hoş geldin</div>
+    <p class="updated">Son güncelleme: 29 Nisan 2026</p>
+  </header>
+
+  <div class="lang-switch">
+    <a href="index.html">🇹🇷 Türkçe</a> · <a href="en.html">🇬🇧 English</a>
+  </div>
+
+  <h2>1. Giriş</h2>
+  <p>
+    Orenda, LAKADOKI (Mustafa Serbeş) tarafından geliştirilen kişisel bir mistik içerik uygulamasıdır.
+    Kahve falı, tarot, rüya yorumu, burç haritası, numeroloji ve diğer geleneksel sembolik okumalar sunar.
+    Bu politika, uygulamayı kullanırken hangi verilerin toplandığını, nasıl kullanıldığını ve
+    haklarınızı açıklar. Orenda <strong>eğlence amaçlıdır</strong>; gerçek kehanet veya tıbbi/psikolojik
+    tavsiye sunmaz.
+  </p>
+
+  <h2>2. Topladığımız Veriler</h2>
+
+  <div class="card">
+    <h3>👤 Kişisel Bilgiler (Sizin Girdiğiniz)</h3>
+    <ul>
+      <li>İsim — onboarding sırasında size hitap için</li>
+      <li>Doğum tarihi — burç ve numeroloji hesaplamaları için</li>
+      <li>Doğum saati — opsiyonel, doğum haritası için</li>
+      <li>Cinsiyet — opsiyonel, hitap dilini özelleştirmek için</li>
+    </ul>
+    <p>Bu bilgiler <strong>yalnızca cihazınızda</strong> Android DataStore'da saklanır. Sunucumuzda tutulmaz.</p>
+  </div>
+
+  <div class="card">
+    <h3>📷 Fotoğraf ve Metinler</h3>
+    <ul>
+      <li>Kahve fincanı / avuç içi / çay kupası fotoğrafları — yorum üretmek için Google Gemini API'ye gönderilir, <strong>saklanmaz</strong></li>
+      <li>Rüya açıklamalarınız — yorum üretmek için Gemini'ye gönderilir, <strong>saklanmaz</strong></li>
+      <li>İsim girdileriniz (örn. partner adı eşleşmesi) — yine yalnızca cihazınızda</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>📱 Uygulama Verileri</h3>
+    <ul>
+      <li>Cihaz dili — UI dil seçimi için</li>
+      <li>Uygulama içi tercih ve ayarlar (tema, bildirim toggle'ları vb.)</li>
+      <li>Geçmiş fal kayıtları — yalnızca cihazınızda</li>
+      <li>Kredi ve streak verileri — yalnızca cihazınızda</li>
+      <li>Reklam kimliği (Advertising ID) — AdMob için anonim</li>
+    </ul>
+  </div>
+
+  <h2>3. Verilerin Kullanım Amacı</h2>
+  <ul>
+    <li>Kişiselleştirilmiş mistik içerik üretmek (burç, numeroloji, fal yorumları)</li>
+    <li>AI destekli yorumlar için Google Gemini API'ye veri göndermek</li>
+    <li>Reklam göstermek (yalnızca ücretsiz kullanıcılar) ve abonelik yönetimi</li>
+    <li>Uygulamayı geliştirmek ve hata gidermek</li>
+  </ul>
+
+  <h2>4. Üçüncü Taraf Hizmetler</h2>
+
+  <div class="card">
+    <h3>🤖 Google Gemini API</h3>
+    <p>
+      AI yorumları için fotoğraf ve metin verileriniz Google'ın Gemini servisine gönderilir.
+      Google'ın gizlilik politikası geçerlidir:
+      <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>📺 Google AdMob</h3>
+    <p>
+      Ücretsiz kullanıcılara reklam göstermek için Google AdMob kullanılır. Anonim reklam kimliği
+      (Advertising ID) ve IP adresi reklam servisine ulaşır. Reklam onayını Profil &gt; Reklam Onayı
+      bölümünden istediğiniz zaman sıfırlayabilirsiniz.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>💎 Google Play Billing</h3>
+    <p>
+      Premium abonelik satın alımları Google Play Billing üzerinden işlenir. Ödeme bilgileri Google
+      tarafından yönetilir; Orenda ödeme detaylarına erişmez.
+    </p>
+  </div>
+
+  <h2>5. Veri Saklama Süresi</h2>
+  <p>
+    Tüm kişisel veri, fal kayıtları ve uygulama içi veriler <strong>yalnızca sizin cihazınızda</strong>
+    saklanır. Uygulamayı kaldırdığınızda veya cihaz ayarlarından "Verileri Temizle" yaptığınızda
+    tüm veriler silinir. Sunucumuzda hiçbir kişisel veri tutulmaz.
+  </p>
+  <p>
+    Gemini API'ye gönderilen fotoğraf/metinler Google tarafından işlenir; Google'ın saklama
+    politikalarını yukarıdaki bağlantıdan inceleyebilirsiniz.
+  </p>
+
+  <h2>6. Çerez Politikası</h2>
+  <p>Orenda mobil uygulaması <strong>çerez kullanmaz</strong>.</p>
+
+  <h2>7. Kullanıcı Hakları (KVKK Madde 11)</h2>
+  <p>Kişisel verilerinize ilişkin aşağıdaki haklara sahipsiniz:</p>
+  <ul>
+    <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+    <li>Hangi verilerin tutulduğunu öğrenme</li>
+    <li>Verilerin silinmesini veya yok edilmesini talep etme</li>
+    <li>Yanlış veya eksik işlenen verilerin düzeltilmesini talep etme</li>
+    <li>Uygulamayı kaldırarak verilerin silinmesini sağlama</li>
+  </ul>
+  <p>
+    Yukarıdaki taleplerinizi <a href="mailto:lakadokistore@gmail.com">lakadokistore@gmail.com</a>
+    adresine iletebilirsiniz.
+  </p>
+
+  <h2>8. GDPR — Avrupa Birliği Kullanıcıları</h2>
+  <p>
+    Avrupa Birliği'nde ikamet ediyorsanız GDPR (General Data Protection Regulation) kapsamında
+    eşdeğer haklara sahipsiniz: erişim, düzeltme, silme, taşınabilirlik, itiraz hakkı.
+    Reklam onayı uygulama içinde <strong>UMP (User Messaging Platform)</strong> ile yönetilir;
+    onayınızı istediğiniz zaman geri çekebilirsiniz.
+  </p>
+
+  <h2>9. Çocuk Koruması</h2>
+  <p>
+    Orenda <strong>13 yaş ve üzeri</strong> kullanıcılar için tasarlanmıştır. 13 yaşından küçük
+    kullanıcıların uygulamayı kullanmaması beklenmektedir. 13 yaş altı bir kullanıcının verilerinin
+    işlendiğini fark edersek, bu verileri derhal silmek için aksiyon alırız.
+  </p>
+
+  <h2>10. Disclaimer</h2>
+  <p>
+    Orenda eğlence amaçlı bir uygulamadır. Sunulan içerikler:
+  </p>
+  <ul>
+    <li>Gerçek bir kehanet iddiası taşımaz</li>
+    <li>Tıbbi, psikolojik veya finansal tavsiye olarak yorumlanamaz</li>
+    <li>Karar mekanizmasında tek başına kullanılmamalıdır</li>
+  </ul>
+
+  <h2>11. Politikadaki Değişiklikler</h2>
+  <p>
+    Bu politikayı güncellediğimizde "Son güncelleme" tarihini değiştiririz. Önemli değişiklikler
+    olursa uygulama içi bildirimle haber veririz.
+  </p>
+
+  <h2>12. İletişim</h2>
+  <p>
+    Sorularınız ve talepleriniz için:
+  </p>
+  <ul>
+    <li>📧 <a href="mailto:lakadokistore@gmail.com">lakadokistore@gmail.com</a></li>
+    <li>🌐 LAKADOKI — Mustafa Serbeş</li>
+  </ul>
+
+  <footer>
+    <p>© 2026 LAKADOKI · Orenda</p>
+    <p>Bu uygulama eğlence amaçlıdır.</p>
+  </footer>
+
+</div>
+</body>
+</html>
