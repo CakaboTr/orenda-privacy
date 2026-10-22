@@ -151,8 +151,10 @@
       <li>Date of birth — used for zodiac and numerology calculations</li>
       <li>Birth time — optional, used for natal-chart calculations</li>
       <li>Gender — optional, used to personalize wording</li>
+      <li>Birth place — optional, used for natal-chart calculations</li>
+      <li>Relationship and work status — optional, used to fit readings to your life</li>
     </ul>
-    <p>This information is stored <strong>only on your device</strong>. We do not store it on any server.</p>
+    <p>This information is stored <strong>only on your device</strong>; we do not store it on any server. When you ask for a reading, it is sent to Google Gemini to prepare that reading (see Section 4).</p>
   </div>
 
   <div class="card">
@@ -160,7 +162,7 @@
     <ul>
       <li>Coffee-cup / palm / tea-cup photos — sent to Google Gemini API for reading generation, <strong>not stored</strong></li>
       <li>Dream descriptions — sent to Gemini for interpretation, <strong>not stored</strong></li>
-      <li>Name inputs (e.g. partner-name compatibility) — kept only on your device</li>
+      <li>Questions and names you write (e.g. partner-name compatibility) — sent to Gemini for reading generation, <strong>not stored</strong></li>
     </ul>
   </div>
 
@@ -188,8 +190,11 @@
   <div class="card">
     <h3>🤖 Google Gemini API</h3>
     <p>
-      Photos and text are sent to Google's Gemini service for AI interpretations. Google's privacy
-      policy applies: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+      For AI interpretations, your profile details (name, zodiac sign, birth date, time and place, gender,
+      relationship and work status), your photos and what you write are sent to Google's Gemini service
+      through Firebase. The iPhone app asks for your explicit permission before the first reading; if you do
+      not allow it, nothing is sent, and you can withdraw your permission at any time in the app's Settings.
+      Google's privacy policy applies: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
     </p>
   </div>
 
@@ -197,8 +202,16 @@
     <h3>📺 Google AdMob</h3>
     <p>
       Free users may see ads served by Google AdMob. An anonymous Advertising ID and IP address are
-      shared with the ad service. You can reset your ad consent any time from <em>Profile → Ad
-      Consent</em>.
+      shared with the ad service. In the Android app you can reset your ad consent any time from
+      <em>Profile → Ad Consent</em>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>🛡️ Firebase App Check</h3>
+    <p>
+      To verify that AI requests come from the genuine, unmodified Orenda app, a device attestation token
+      (Apple App Attest on iPhone, Google Play Integrity on Android) is sent to Google Firebase.
     </p>
   </div>
 

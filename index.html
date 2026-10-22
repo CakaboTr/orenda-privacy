@@ -183,8 +183,10 @@
       <li>Doğum tarihi — burç ve numeroloji hesaplamaları için</li>
       <li>Doğum saati — opsiyonel, doğum haritası için</li>
       <li>Cinsiyet — opsiyonel, hitap dilini özelleştirmek için</li>
+      <li>Doğum yeri — opsiyonel, doğum haritası için</li>
+      <li>İlişki ve iş durumu — opsiyonel, yorumu hayatınıza uydurmak için</li>
     </ul>
-    <p>Bu bilgiler <strong>yalnızca cihazınızda</strong> saklanır. Sunucumuzda tutulmaz.</p>
+    <p>Bu bilgiler <strong>yalnızca cihazınızda</strong> saklanır, sunucumuzda tutulmaz. Bir yorum istediğinizde, yorumun hazırlanması için Google Gemini'ye gönderilir (bkz. Bölüm 4).</p>
   </div>
 
   <div class="card">
@@ -192,7 +194,7 @@
     <ul>
       <li>Kahve fincanı / avuç içi / çay kupası fotoğrafları — yorum üretmek için Google Gemini API'ye gönderilir, <strong>saklanmaz</strong></li>
       <li>Rüya açıklamalarınız — yorum üretmek için Gemini'ye gönderilir, <strong>saklanmaz</strong></li>
-      <li>İsim girdileriniz (örn. partner adı eşleşmesi) — yine yalnızca cihazınızda</li>
+      <li>Yazdığınız sorular ve isimler (örn. partner adı eşleşmesi) — yorum üretmek için Gemini'ye gönderilir, <strong>saklanmaz</strong></li>
     </ul>
   </div>
 
@@ -220,8 +222,10 @@
   <div class="card">
     <h3>🤖 Google Gemini API</h3>
     <p>
-      AI yorumları için fotoğraf ve metin verileriniz Google'ın Gemini servisine gönderilir.
-      Google'ın gizlilik politikası geçerlidir:
+      AI yorumları için profil bilgileriniz (ad, burç, doğum tarihi, saati ve yeri, cinsiyet, ilişki ve iş
+      durumu), fotoğraflarınız ve yazdıklarınız Google'ın Gemini servisine Firebase üzerinden gönderilir.
+      iPhone uygulaması bunu ilk yorumdan önce açıkça sorar; izin vermezseniz hiçbir bilgi gönderilmez ve
+      izninizi uygulamanın Ayarlar bölümünden istediğiniz zaman geri alabilirsiniz. Google'ın gizlilik politikası geçerlidir:
       <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
     </p>
   </div>
@@ -230,8 +234,17 @@
     <h3>📺 Google AdMob</h3>
     <p>
       Ücretsiz kullanıcılara reklam göstermek için Google AdMob kullanılır. Anonim reklam kimliği
-      (Advertising ID) ve IP adresi reklam servisine ulaşır. Reklam onayını Profil &gt; Reklam Onayı
-      bölümünden istediğiniz zaman sıfırlayabilirsiniz.
+      (Advertising ID) ve IP adresi reklam servisine ulaşır. Android uygulamasında reklam onayını
+      Profil &gt; Reklam Onayı bölümünden istediğiniz zaman sıfırlayabilirsiniz.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>🛡️ Firebase App Check</h3>
+    <p>
+      Yapay zekâ isteklerinin değiştirilmemiş Orenda uygulamasından geldiğini doğrulamak için cihaz
+      doğrulama belirteci (iPhone'da Apple App Attest, Android'de Google Play Integrity) Google Firebase'e
+      gönderilir.
     </p>
   </div>
 
